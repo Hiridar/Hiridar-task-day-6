@@ -1,0 +1,15 @@
+OPSS TASK:
+class Person:
+  def __init__(self, name, age, gender):
+    self.name = name
+    self.age = age
+    self.gender = gender
+  def __str__(self):
+    return f'{self.name} is {self.age} years old and identifies as {self.gender}'
+class UberPriceCalculator:
+  def __init__(self, base_fare, per_mile_rate, per_minute_rate):
+    self.base_fare = base_fare
+    self.per_mile_rate = per_mile_rate
+    self.per_minute_rate = per_minute_rate
+  def calculate_price(self, distance_in_miles, time_in_minutes):
+    return self.base_fare + self.per_mile_rate * distance_in_miles + self.per_minute_rate * time_in_minutes
